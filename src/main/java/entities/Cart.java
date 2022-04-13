@@ -1,7 +1,6 @@
 package entities;
 
 import org.springframework.stereotype.Component;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,6 +11,9 @@ public class Cart {
 
     public Cart() {
         newCart = new HashMap<Integer, Product>();
+    }
+    public Map<Integer, Product> getCart() {
+        return newCart;
     }
 }
 
